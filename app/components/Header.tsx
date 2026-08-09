@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useCart } from "./CartContext";
+import SearchOverlay from "./SearchOverlay";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const { cartCount } = useCart();
 
   return (
@@ -24,10 +26,10 @@ export default function Header() {
 
           <nav className="desktopNav">
             <Link href="/shop">SHOP</Link>
-            <Link href="/#new">NEW</Link>
-            <Link href="/#collection">COLLECTION</Link>
-            <Link href="/#story">ABOUT</Link>
-            <Link href="/#journal">JOURNAL</Link>
+            <Link href="/new">NEW</Link>
+            <Link href="/collection">COLLECTION</Link>
+            <Link href="/about">ABOUT</Link>
+            <Link href="/journal">JOURNAL</Link>
           </nav>
         </div>
 
@@ -36,7 +38,12 @@ export default function Header() {
         </Link>
 
         <div className="headerRight">
-          <button>SEARCH</button>
+           <button
+            type="button"
+            onClick={() => setSearchOpen(true)}
+           >
+            SEARCH
+           </button>
           <Link href="/cart">CART ({cartCount})</Link>
         </div>
       </header>
@@ -65,19 +72,19 @@ export default function Header() {
             Shop
           </Link>
 
-          <Link href="/#new" onClick={() => setMenuOpen(false)}>
+          <Link href="/new" onClick={() => setMenuOpen(false)}>
             New
           </Link>
 
-          <Link href="/#collection" onClick={() => setMenuOpen(false)}>
+          <Link href="/collection" onClick={() => setMenuOpen(false)}>
             Collection
           </Link>
 
-          <Link href="/#story" onClick={() => setMenuOpen(false)}>
+          <Link href="/about" onClick={() => setMenuOpen(false)}>
             About
           </Link>
 
-          <Link href="/#journal" onClick={() => setMenuOpen(false)}>
+          <Link href="/journal" onClick={() => setMenuOpen(false)}>
             Journal
           </Link>
         </nav>
@@ -91,6 +98,11 @@ export default function Header() {
       <div
         className={`mobileMenuOverlay ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(false)}
+      />
+
+      <SearchOverlay
+        open={searchOpen}
+        onClose={() => setSearchOpen(false)}
       />
     </>
   );

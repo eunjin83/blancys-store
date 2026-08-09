@@ -1,26 +1,31 @@
 import Header from "./components/Header";
+import Link from "next/link";
 
 const products = [
   {
     name: "Suede Shirring Hobo Bag",
+    slug: "suede-shirring-hobo-bag",
     price: "₩69,000",
     image:
       "https://pinkloveu7.cafe24.com/web/product/big/202602/a446d8e6f8dc912ebe1f019591bf8b32.jpg",
   },
   {
     name: "City Shoulder Bag",
+    slug: "city-shoulder-bag",
     price: "₩79,000",
     image:
       "https://pinkloveu7.cafe24.com/web/product/medium/202602/33d7a926c810b1e2b4546821007fd954.jpg",
   },
   {
     name: "Nylon Hobo Bag",
+    slug: "nylon-hobo-bag",
     price: "₩69,000",
     image:
       "https://pinkloveu7.cafe24.com/web/product/medium/202602/376271244636e15da21ebae1a7117824.jpg",
   },
   {
     name: "Cookie and Cream Bag",
+    slug: "cookie-and-cream-bag",
     price: "₩199,000",
     image:
       "https://pinkloveu7.cafe24.com/web/product/extra/big/202404/fc3f404a8446315976ad16227541da7d.jpg",
@@ -30,18 +35,21 @@ const products = [
 const featured = [
   {
     name: "Espresso Black Bag",
+    slug: "espresso-black-bag",
     price: "₩399,000",
     image:
       "https://pinkloveu7.cafe24.com/web/product/medium/202404/7d3e78da2eeb49b28b688b885bd2ec09.jpg",
   },
   {
     name: "Espresso Flat White Bag",
+    slug: "espresso-flat-white-bag",
     price: "₩399,000",
     image:
       "https://pinkloveu7.cafe24.com/web/product/medium/202404/074bab1945cffcb7b1b4993a4216f410.jpg",
   },
   {
     name: "Black Cookie and Cream Bag",
+    slug: "black-cookie-and-cream-bag",
     price: "₩249,000",
     image:
       "https://pinkloveu7.cafe24.com/web/product/big/202404/5131bd3774b888d4055a7711bb8b6d2c.jpg",
@@ -105,13 +113,15 @@ export default function Home() {
             <br />
             for everyday.
           </h1>
-          <a className="underLink" href="#new">
+          <Link className="underLink" href="/new">
             DISCOVER COLLECTION
-          </a>
+          </Link>
         </div>
 
-        <div
+        <Link
+          href="/shop/cookie-and-cream-bag"
           className="heroImage"
+          aria-label="View Cookie and Cream Bag"
           style={{
             backgroundImage:
               "url('https://pinkloveu7.cafe24.com/web/product/extra/big/202404/fc3f404a8446315976ad16227541da7d.jpg')",
@@ -126,26 +136,33 @@ export default function Home() {
       <section className="contentSection" id="new">
         <div className="sectionTitle">
           <h2>New Arrivals</h2>
-          <a href="#">VIEW ALL</a>
+          <Link href="/new">VIEW ALL</Link>
         </div>
 
         <div className="productRow">
           {products.map((product) => (
-            <article className="productCard" key={product.name}>
+            <Link
+              href={`/shop/${product.slug}`}
+              className="productCard"
+              key={product.slug}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
               <div
                 className="productImage"
                 style={{ backgroundImage: `url('${product.image}')` }}
               />
               <h3>{product.name}</h3>
               <p>{product.price}</p>
-            </article>
+            </Link>
           ))}
         </div>
       </section>
 
       <section className="storySection" id="story">
-        <div
+        <Link
+          href="/shop/suede-shirring-hobo-bag"
           className="storyImage"
+          aria-label="View Suede Shirring Hobo Bag"
           style={{
             backgroundImage:
               "url('https://pinkloveu7.cafe24.com/web/product/big/202602/a446d8e6f8dc912ebe1f019591bf8b32.jpg')",
@@ -158,28 +175,32 @@ export default function Home() {
             <br />
             Thoughtful details.
           </h2>
-          <a className="underLink" href="#">
+          <Link className="underLink" href="/about">
             OUR STORY
-          </a>
+          </Link>
         </div>
       </section>
 
       <section className="contentSection" id="collection">
         <div className="sectionTitle">
           <h2>Featured Bags</h2>
-          <a href="#">VIEW ALL</a>
+          <Link href="/collection">VIEW ALL</Link>
         </div>
 
         <div className="featuredGrid">
           {featured.map((product) => (
-            <article key={product.name}>
+            <Link
+              href={`/shop/${product.slug}`}
+              key={product.slug}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
               <div
                 className="featuredImage"
                 style={{ backgroundImage: `url('${product.image}')` }}
               />
               <h3>{product.name}</h3>
               <p>{product.price}</p>
-            </article>
+            </Link>
           ))}
         </div>
       </section>
@@ -187,19 +208,23 @@ export default function Home() {
       <section className="contentSection journalSection" id="journal">
         <div className="sectionTitle">
           <h2>Journal</h2>
-          <a href="#">VIEW ALL</a>
+          <Link href="/journal">VIEW ALL</Link>
         </div>
 
         <div className="journalGrid">
           {journal.map((item) => (
-            <article key={item.title}>
+            <Link
+              href="/journal"
+              key={item.title}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
               <div
                 className="journalImage"
                 style={{ backgroundImage: `url('${item.image}')` }}
               />
               <h3>{item.title}</h3>
               <p>{item.date}</p>
-            </article>
+            </Link>
           ))}
         </div>
       </section>
