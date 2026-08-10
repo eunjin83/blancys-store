@@ -1552,3 +1552,38 @@ button {
 .storyCopy .underLink {
   pointer-events: auto;
 }
+
+/* MOBILE HORIZONTAL SCROLL */
+@media (max-width: 768px) {
+  .featuredGrid,
+  .journalGrid,
+  .instagramGrid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .featuredGrid::-webkit-scrollbar,
+  .journalGrid::-webkit-scrollbar,
+  .instagramGrid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .featuredGrid > a,
+  .journalGrid > a {
+    flex: 0 0 78%;
+    min-width: 78%;
+    scroll-snap-align: start;
+  }
+
+  .instagramGrid > a {
+    flex: 0 0 72%;
+    min-width: 72%;
+    scroll-snap-align: start;
+  }
+}
