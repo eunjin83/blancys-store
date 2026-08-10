@@ -77,7 +77,7 @@ export default function AboutPage() {
             style={{
               minHeight: "620px",
               backgroundImage:
-                "url('https://pinkloveu7.cafe24.com/web/product/big/202602/a446d8e6f8dc912ebe1f019591bf8b32.jpg')",
+                "url('https://pinkloveu7.cafe24.com/web/product/medium/202404/2f4bebf2ebcd7131b774c6ac1a80e438.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
