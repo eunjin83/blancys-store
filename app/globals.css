@@ -260,7 +260,7 @@ button {
 }
 
 .journalImage {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   background-color: #e9e5de;
 }
 
@@ -492,11 +492,6 @@ button {
   .featuredGrid article:nth-child(3),
   .journalGrid article:nth-child(3) {
     grid-column: 1 / -1;
-  }
-
-  .featuredGrid article:nth-child(3) .featuredImage,
-  .journalGrid article:nth-child(3) .journalImage {
-    aspect-ratio: 1.45 / 1;
   }
 
   .instagramSection {
