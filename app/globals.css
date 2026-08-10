@@ -140,6 +140,9 @@ button {
 
 .heroImage {
   min-height: calc(100vh - 78px);
+  background-size: auto 160%;
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .heroIndex {

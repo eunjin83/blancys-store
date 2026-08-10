@@ -44,7 +44,41 @@ export default function Header() {
            >
             SEARCH
            </button>
-          <Link href="/cart">CART ({cartCount})</Link>
+          <Link
+  href="/cart"
+  aria-label={`Cart with ${cartCount} items`}
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "6px",
+    color: "inherit",
+    textDecoration: "none",
+  }}
+>
+  <svg
+    width="19"
+    height="19"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <path
+      d="M7.5 9V7.5C7.5 5.015 9.515 3 12 3C14.485 3 16.5 5.015 16.5 7.5V9"
+      stroke="currentColor"
+      strokeWidth="1.4"
+      strokeLinecap="round"
+    />
+    <path
+      d="M5.5 8.5H18.5L19.5 21H4.5L5.5 8.5Z"
+      stroke="currentColor"
+      strokeWidth="1.4"
+      strokeLinejoin="round"
+    />
+  </svg>
+
+  <span>({cartCount})</span>
+</Link>
         </div>
       </header>
 
