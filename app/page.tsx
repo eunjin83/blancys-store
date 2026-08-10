@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Link from "next/link";
+import StorySlider from "./components/StorySlider";
 
 const products = [
   {
@@ -105,33 +106,13 @@ export default function Home() {
     <main>
       <Header />
 
-      <section className="hero">
-        <div className="heroCopy">
-          <p className="eyebrow">2026 NEW COLLECTION</p>
-          <h1>
-            Quiet luxury
-            <br />
-            for everyday.
-          </h1>
-          <Link className="underLink" href="/new">
-            DISCOVER COLLECTION
-          </Link>
-        </div>
-
-        <Link
-          href="/shop/cookie-and-cream-bag"
-          className="heroImage"
-          aria-label="View Cookie and Cream Bag"
-          style={{
-            backgroundImage:
-              "url('https://pinkloveu7.cafe24.com/web/product/extra/big/202404/fc3f404a8446315976ad16227541da7d.jpg')",
-          }}
-        />
-
-        <div className="heroIndex">
-          01 <span /> 03
-        </div>
-      </section>
+      <section className="mainHero">
+  <img
+    src="/main-hero.jpg"
+    alt="BLANCYS"
+    className="mainHeroImage"
+  />
+</section>
 
       <section className="contentSection" id="new">
         <div className="sectionTitle">
@@ -159,25 +140,20 @@ export default function Home() {
       </section>
 
       <section className="storySection" id="story">
-        <Link
-          href="/shop/suede-shirring-hobo-bag"
-          className="storyImage"
-          aria-label="View Suede Shirring Hobo Bag"
-          style={{
-            backgroundImage:
-              "url('https://pinkloveu7.cafe24.com/web/product/big/202602/a446d8e6f8dc912ebe1f019591bf8b32.jpg')",
-          }}
-        />
-        <div className="storyCopy">
+        <StorySlider />
+
+         <div className="storyCopy">
           <p className="eyebrow">ESSENCE OF BLANCYS</p>
-          <h2>
-            Timeless design.
-            <br />
-            Thoughtful details.
-          </h2>
-          <Link className="underLink" href="/about">
-            OUR STORY
-          </Link>
+
+           <h2>
+             Timeless design.
+             <br />
+              Thoughtful details.
+           </h2>
+
+         <Link className="underLink" href="/about">
+             OUR STORY
+         </Link>
         </div>
       </section>
 
@@ -232,7 +208,7 @@ export default function Home() {
       <section className="instagramSection">
         <div className="instagramTitle">
           <h2>Instagram</h2>
-          <p>@BLANCYS_OFFICIAL</p>
+          <p>@BLANCYS_SEOUL</p>
         </div>
 
         <div className="instagramGrid">
@@ -254,7 +230,7 @@ export default function Home() {
 
         <a
           className="underLink"
-          href="https://www.instagram.com/blancys_official/"
+          href="https://www.instagram.com/blancys_seoul/"
           target="_blank"
           rel="noopener noreferrer"
         >
