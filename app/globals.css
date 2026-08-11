@@ -20,7 +20,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 a {
@@ -61,7 +61,7 @@ button {
 
 .logo {
   justify-self: center;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 28px;
   letter-spacing: 0.2em;
 }
@@ -113,7 +113,7 @@ button {
 .hero h1,
 .storyCopy h2 {
   margin: 0 0 34px;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: clamp(48px, 5.5vw, 84px);
   line-height: 0.96;
@@ -556,7 +556,7 @@ button {
 
 .shopHero h1 {
   margin: 0;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(54px, 6vw, 92px);
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -727,7 +727,7 @@ button {
 
 .productDetailInfo h1 {
   margin: 0 0 14px;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(42px, 4vw, 66px);
   font-weight: 400;
   line-height: 1;
@@ -808,7 +808,7 @@ button {
 
 .productEditorial h2 {
   margin: 0;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(48px, 6vw, 90px);
   font-weight: 400;
   line-height: 0.95;
@@ -923,7 +923,7 @@ button {
   }
 
   .mobileMenuNav a {
-    font-family: var(--font-montserrat), sans-serif;
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 34px;
     line-height: 1;
   }
@@ -1768,7 +1768,7 @@ button {
 
 .contactHero h1 {
   margin: 0;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(64px, 8vw, 120px);
   font-weight: 400;
   line-height: 0.95;
@@ -1879,7 +1879,7 @@ button {
 
 .notFoundContent h1 {
   margin: 0;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(72px, 10vw, 150px);
   font-weight: 400;
   line-height: 0.88;
@@ -1941,7 +1941,7 @@ button {
 
 .noticeHeader h1 {
   margin: 0;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(64px, 8vw, 120px);
   font-weight: 400;
   line-height: 1;
@@ -2025,7 +2025,7 @@ button {
 
 .faqHeader h1 {
   margin: 0;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(64px, 8vw, 120px);
   font-weight: 400;
   line-height: 1;
@@ -2120,7 +2120,7 @@ button {
 
 .shippingReturnsHeader h1 {
   margin: 0;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(56px, 7vw, 110px);
   font-weight: 400;
   line-height: 1;
@@ -2195,7 +2195,7 @@ button {
 
 .policyHeader h1 {
   margin: 0;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(56px, 7vw, 110px);
   font-weight: 400;
   line-height: 1;
@@ -2270,7 +2270,7 @@ button {
 
 .cartAddedModal h2 {
   margin: 0;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 1.15;
