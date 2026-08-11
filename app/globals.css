@@ -2232,3 +2232,97 @@ button {
     padding: 50px 20px 80px;
   }
 }
+
+.cartAddedOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cartAddedModal {
+  position: relative;
+  width: min(460px, 100%);
+  background: #f7f5f1;
+  padding: 48px;
+}
+
+.cartAddedClose {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  border: 0;
+  background: transparent;
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.cartAddedLabel {
+  margin: 0 0 18px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.cartAddedModal h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.cartAddedText {
+  margin: 20px 0 34px;
+  font-size: 12px;
+  color: #666;
+}
+
+.cartAddedActions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cartAddedActions button,
+.cartAddedActions a {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cartAddedContinue {
+  border: 1px solid #111;
+  background: transparent;
+  color: #111;
+}
+
+.cartAddedViewCart {
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .cartAddedModal {
+    padding: 42px 24px 24px;
+  }
+
+  .cartAddedModal h2 {
+    font-size: 26px;
+  }
+
+  .cartAddedActions {
+    grid-template-columns: 1fr;
+  }
+}
