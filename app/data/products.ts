@@ -24,12 +24,12 @@ export const products: Product[] = [
     material: "Product material information",
   },
   {
-    name: "Urban3Way Bag",
-    slug: "urban3way-bag",
+    name: "Urban 3Way Bag",
+    slug: "urban-3way-bag",
     price: "₩69,000",
     image:
       "https://pinkloveu7.cafe24.com/web/product/medium/202602/276e0bd3f0239103dc92643d492dd5de.jpg",
-    description: "Urban3Way Bag",
+    description: "Urban 3Way Bag",
     category: "BAG",
     color: "BLACK",
     size: "Product size information",
