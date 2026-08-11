@@ -123,21 +123,30 @@ export default function Header() {
           </Link>
         </nav>
 
-        <div className="mobileMenuBottom">
-          <a href="#">Instagram</a>
-          <a href="#">Contact</a>
-        </div>
+              <div className="mobileMenuBottom">
+        <a
+          href="https://www.instagram.com/blancys_seoul/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <Link href="/contact" onClick={() => setMenuOpen(false)}>
+          Contact
+        </Link>
       </div>
+    </div>
 
-      <div
-        className={`mobileMenuOverlay ${menuOpen ? "open" : ""}`}
-        onClick={() => setMenuOpen(false)}
-      />
+    <div
+      className={`mobileMenuOverlay ${menuOpen ? "open" : ""}`}
+      onClick={() => setMenuOpen(false)}
+    />
 
-      <SearchOverlay
-        open={searchOpen}
-        onClose={() => setSearchOpen(false)}
-      />
-    </>
-  );
+    <SearchOverlay
+      open={searchOpen}
+      onClose={() => setSearchOpen(false)}
+    />
+  </>
+);
 }

@@ -238,52 +238,6 @@ export default function Home() {
         </a>
       </section>
 
-      <footer className="footer">
-        <div className="footerIntro">
-          <a className="logo footerLogo" href="#">
-            <img src="/BLANCYS_logo.png" alt="BLANCYS" />
-          </a>
-          <p>
-            Timeless bags designed
-            <br />
-            for everyday life.
-          </p>
-        </div>
-
-        <div>
-          <h4>SHOP</h4>
-          <a href="#">All Products</a>
-          <a href="#">New Arrivals</a>
-          <a href="#">Bags</a>
-        </div>
-
-        <div>
-          <h4>CUSTOMER CARE</h4>
-          <a href="#">Notice</a>
-          <a href="#">FAQ</a>
-          <a href="#">Shipping & Returns</a>
-        </div>
-
-        <div>
-          <h4>ABOUT</h4>
-          <a href="#">Our Story</a>
-          <a href="#">Journal</a>
-          <a href="#">Contact</a>
-        </div>
-
-        <div className="newsletter">
-          <h4>NEWSLETTER</h4>
-          <p>Get updates on new collections.</p>
-          <div className="emailBox">
-            <span>Your email</span>
-            <span>→</span>
-          </div>
-        </div>
-
-        <div className="copyright">
-          © 2026 BLANCYS. All rights reserved.
-        </div>
-      </footer>
     </main>
   );
 }

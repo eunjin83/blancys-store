@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Header from "../components/Header";
 
 type OrderItem = {
   slug: string;
@@ -44,7 +43,6 @@ export default function OrderCompletePage() {
 
   return (
     <main className="orderCompletePage">
-      <Header />
 
       <section className="orderCompleteContainer">
         <div className="orderCompleteMessage">

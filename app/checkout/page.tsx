@@ -2,7 +2,6 @@
 
 import Script from "next/script";
 import { useState } from "react";
-import Header from "../components/Header";
 import { useCart } from "../components/CartContext";
 
 export default function CheckoutPage() {
@@ -139,7 +138,6 @@ alert("주문 정보가 정상적으로 준비되었습니다.");
       strategy="afterInteractive"
     />
     <main className="checkoutPage">
-      <Header />
 
       <section className="checkoutContainer">
         <div className="checkoutForm">

@@ -1582,3 +1582,653 @@ button {
     scroll-snap-align: start;
   }
 }
+
+.siteFooter {
+  padding: 80px 48px 30px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  color: #111;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 48px;
+}
+
+.footerBrand p {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footerLogo img {
+  width: 150px;
+  height: auto;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerColumn h4 {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.footerColumn a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footerBusiness {
+  margin-top: 70px;
+  padding-top: 28px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.footerBusiness p {
+  margin: 0;
+  font-size: inherit;
+}
+
+.footerBottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 11px;
+  color: #666;
+}
+
+.footerPolicies {
+  display: flex;
+  gap: 20px;
+}
+
+.footerPolicies a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .siteFooter {
+    padding: 60px 20px 24px;
+  }
+
+  .footerTop {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 24px;
+  }
+
+  .footerBrand {
+    grid-column: 1 / -1;
+  }
+
+  .footerLogo img {
+    width: 130px;
+  }
+
+  .footerBusiness {
+    margin-top: 50px;
+    display: block;
+  }
+
+  .footerBusiness p {
+    margin-bottom: 4px;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .footerPolicies {
+    flex-wrap: wrap;
+  }
+}
+
+.productAccordion {
+  margin-top: 32px;
+  border-top: 1px solid #ddd;
+}
+
+.productAccordionItem {
+  border-bottom: 1px solid #ddd;
+}
+
+.productAccordionButton {
+  width: 100%;
+  padding: 18px 0;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: inherit;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.productAccordionIcon {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.productAccordionContent {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    padding 0.35s ease;
+}
+
+.productAccordionContent.isOpen {
+  max-height: 200px;
+  opacity: 1;
+  padding-bottom: 18px;
+}
+
+.productAccordionContent p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.contactPage {
+  background: #f7f5f1;
+  min-height: 100vh;
+}
+
+.contactHero {
+  padding: 120px 7vw 100px;
+  border-bottom: 1px solid #dedbd5;
+}
+
+.contactEyebrow {
+  margin: 0 0 28px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+}
+
+.contactHero h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(64px, 8vw, 120px);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.contactIntro {
+  max-width: 520px;
+  margin-top: 42px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.contactContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.contactBlock {
+  min-height: 320px;
+  padding: 55px 7vw;
+  border-right: 1px solid #dedbd5;
+  border-bottom: 1px solid #dedbd5;
+}
+
+.contactBlock:nth-child(2n) {
+  border-right: 0;
+}
+
+.contactBlock h2 {
+  margin: 0 0 36px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.contactMainText {
+  display: inline-block;
+  margin: 0 0 24px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+.contactBlock p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.contactLink {
+  display: inline-block;
+  margin-top: 28px;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 4px;
+  font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .contactHero {
+    padding: 80px 20px 70px;
+  }
+
+  .contactHero h1 {
+    font-size: 58px;
+  }
+
+  .contactIntro {
+    margin-top: 32px;
+  }
+
+  .contactContent {
+    grid-template-columns: 1fr;
+  }
+
+  .contactBlock {
+    min-height: auto;
+    padding: 42px 20px;
+    border-right: 0;
+  }
+
+  .contactMainText {
+    font-size: 20px;
+  }
+}
+
+.notFoundPage {
+  min-height: 75vh;
+  background: #f7f5f1;
+  display: flex;
+  align-items: center;
+}
+
+.notFoundContent {
+  width: 100%;
+  padding: 100px 7vw;
+}
+
+.notFoundLabel {
+  margin: 0 0 28px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+}
+
+.notFoundContent h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(72px, 10vw, 150px);
+  font-weight: 400;
+  line-height: 0.88;
+}
+
+.notFoundText {
+  margin: 42px 0 0;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.notFoundLinks {
+  margin-top: 44px;
+  display: flex;
+  gap: 30px;
+}
+
+.notFoundLinks a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 4px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .notFoundContent {
+    padding: 80px 20px;
+  }
+
+  .notFoundContent h1 {
+    font-size: 64px;
+  }
+
+  .notFoundLinks {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+}
+
+.noticePage {
+  min-height: 75vh;
+  background: #f7f5f1;
+}
+
+.noticeHeader {
+  padding: 120px 7vw 80px;
+  border-bottom: 1px solid #dedbd5;
+}
+
+.noticeHeader p {
+  margin: 0 0 24px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+}
+
+.noticeHeader h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(64px, 8vw, 120px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.noticeContainer {
+  padding: 70px 7vw 120px;
+}
+
+.noticeTableHeader,
+.noticeRow {
+  display: grid;
+  grid-template-columns: 80px 1fr 140px;
+  align-items: center;
+}
+
+.noticeTableHeader {
+  padding: 0 0 14px;
+  border-bottom: 1px solid #111;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.noticeRow {
+  min-height: 70px;
+  border-bottom: 1px solid #dedbd5;
+  font-size: 12px;
+}
+
+.noticeRow span:last-child {
+  color: #777;
+  font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .noticeHeader {
+    padding: 80px 20px 60px;
+  }
+
+  .noticeHeader h1 {
+    font-size: 58px;
+  }
+
+  .noticeContainer {
+    padding: 50px 20px 80px;
+  }
+
+  .noticeTableHeader,
+  .noticeRow {
+    grid-template-columns: 45px 1fr 85px;
+  }
+
+  .noticeTableHeader {
+    font-size: 9px;
+  }
+
+  .noticeRow {
+    font-size: 11px;
+  }
+
+  .noticeRow span:last-child {
+    font-size: 9px;
+  }
+}
+
+.faqPage {
+  min-height: 75vh;
+  background: #f7f5f1;
+}
+
+.faqHeader {
+  padding: 120px 7vw 80px;
+  border-bottom: 1px solid #dedbd5;
+}
+
+.faqHeader p {
+  margin: 0 0 24px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+}
+
+.faqHeader h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(64px, 8vw, 120px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.faqContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 7vw 120px;
+}
+
+.faqItem {
+  border-bottom: 1px solid #dedbd5;
+}
+
+.faqQuestion {
+  width: 100%;
+  padding: 24px 0;
+  border: 0;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.faqQuestion span:last-child {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    padding 0.35s ease;
+}
+
+.faqAnswer.open {
+  max-height: 220px;
+  opacity: 1;
+  padding-bottom: 24px;
+}
+
+.faqAnswer p {
+  margin: 0;
+  max-width: 760px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .faqHeader {
+    padding: 80px 20px 60px;
+  }
+
+  .faqHeader h1 {
+    font-size: 58px;
+  }
+
+  .faqContainer {
+    padding: 50px 20px 80px;
+  }
+
+  .faqQuestion {
+    font-size: 12px;
+  }
+}
+
+.shippingReturnsPage {
+  min-height: 75vh;
+  background: #f7f5f1;
+}
+
+.shippingReturnsHeader {
+  padding: 120px 7vw 80px;
+  border-bottom: 1px solid #dedbd5;
+}
+
+.shippingReturnsHeader p {
+  margin: 0 0 24px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+}
+
+.shippingReturnsHeader h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(56px, 7vw, 110px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.shippingReturnsContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.shippingReturnsBlock {
+  min-height: 300px;
+  padding: 55px 7vw;
+  border-right: 1px solid #dedbd5;
+  border-bottom: 1px solid #dedbd5;
+}
+
+.shippingReturnsBlock:nth-child(2n) {
+  border-right: 0;
+}
+
+.shippingReturnsBlock h2 {
+  margin: 0 0 30px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.shippingReturnsBlock p {
+  margin: 0 0 18px;
+  max-width: 520px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .shippingReturnsHeader {
+    padding: 80px 20px 60px;
+  }
+
+  .shippingReturnsHeader h1 {
+    font-size: 48px;
+  }
+
+  .shippingReturnsContent {
+    grid-template-columns: 1fr;
+  }
+
+  .shippingReturnsBlock {
+    min-height: auto;
+    padding: 42px 20px;
+    border-right: 0;
+  }
+}
+
+.policyPage {
+  min-height: 75vh;
+  background: #f7f5f1;
+}
+
+.policyHeader {
+  padding: 120px 7vw 80px;
+  border-bottom: 1px solid #dedbd5;
+}
+
+.policyHeader p {
+  margin: 0 0 24px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+}
+
+.policyHeader h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(56px, 7vw, 110px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.policyContent {
+  max-width: 900px;
+  padding: 70px 7vw 120px;
+}
+
+.policyContent h2 {
+  margin: 0 0 32px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.policyContent p {
+  margin: 0 0 20px;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .policyHeader {
+    padding: 80px 20px 60px;
+  }
+
+  .policyHeader h1 {
+    font-size: 48px;
+  }
+
+  .policyContent {
+    padding: 50px 20px 80px;
+  }
+}
