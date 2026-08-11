@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "./components/CartContext";
 import Footer from "./components/Footer";
@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="ko"
       translate="no"
-      className={`${geistSans.variable} ${geistMono.variable} ${openSans.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} h-full antialiased`}
     >
       <head>
         <meta name="google" content="notranslate" />
