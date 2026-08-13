@@ -55,7 +55,7 @@ button {
 .desktopNav {
   display: flex;
   gap: 24px;
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 0.04em;
 }
 
@@ -84,7 +84,7 @@ button {
   background: transparent;
   padding: 0;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .menuButton {
@@ -179,14 +179,14 @@ button {
 .instagramTitle h2 {
   margin: 0;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.04em;
 }
 
 .sectionTitle a {
   border-bottom: 1px solid currentColor;
-  font-size: 9px;
+  font-size: 14px;
 }
 
 .productRow {
@@ -204,7 +204,7 @@ button {
 .featuredGrid h3,
 .journalGrid h3 {
   margin: 12px 0 5px;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
 }
 
@@ -213,7 +213,7 @@ button {
 .journalGrid p {
   margin: 0;
   color: #4f4d49;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .storySection {
@@ -278,7 +278,7 @@ button {
 
 .instagramTitle p {
   margin: 8px 0 0;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.05em;
 }
 
@@ -434,7 +434,7 @@ button {
   }
 
   .sectionTitle h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .productRow {
@@ -560,7 +560,7 @@ button {
 .shopHero h1 {
   margin: 0;
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: clamp(54px, 6vw, 92px);
+  font-size: clamp(80px, 9vw, 140px);
   font-weight: 400;
   letter-spacing: -0.04em;
 }
@@ -624,13 +624,13 @@ button {
 
 .shopProductInfo h2 {
   margin: 0 0 6px;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 400;
 }
 
 .shopProductInfo p {
   margin: 0;
-  font-size: 10px;
+  font-size: 13px;
   color: #55514c;
 }
 
@@ -644,7 +644,7 @@ button {
   }
 
   .shopHero h1 {
-    font-size: 52px;
+    font-size: px;
   }
 
   .shopToolbar {
@@ -685,11 +685,11 @@ button {
   }
 
   .shopProductInfo h2 {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .shopProductInfo p {
-    font-size: 9px;
+    font-size: 11px;
   }
 }
 
@@ -925,10 +925,17 @@ button {
     margin-top: 70px;
   }
 
-  .mobileMenuNav a {
+  .mobileMenuNav a,
+  .mobileMenuNav button {
     font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 34px;
     line-height: 1;
+    background: none;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
   }
 
   .mobileMenuBottom {

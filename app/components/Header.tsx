@@ -121,6 +121,15 @@ export default function Header() {
           <Link href="/journal" onClick={() => setMenuOpen(false)}>
             Journal
           </Link>
+          <button
+           type="button"
+           onClick={() => {
+            setMenuOpen(false);
+           setSearchOpen(true);
+            }}
+          >
+            Search
+          </button>
         </nav>
 
               <div className="mobileMenuBottom">
