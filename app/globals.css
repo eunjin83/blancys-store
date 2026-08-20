@@ -240,6 +240,7 @@ button {
   left: 7vw;
   top: 50%;
   transform: translateY(-50%);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.32);
 }
 
 .storyCopy h2 {
@@ -459,7 +460,7 @@ button {
     height: auto;
     display: flex;
     flex-direction: column;
-    color: var(--foreground);
+    color: white;
     background: var(--background);
   }
 
@@ -478,6 +479,7 @@ button {
     top: auto;
     transform: none;
     padding: 28px 20px 56px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.32);
   }
 
   .storyCopy h2 {
@@ -560,7 +562,7 @@ button {
 .shopHero h1 {
   margin: 0;
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: clamp(80px, 9vw, 140px);
+  font-size: clamp(46px, 4.8vw, 72px);
   font-weight: 400;
   letter-spacing: -0.04em;
 }
@@ -639,12 +641,14 @@ button {
 }
 
 @media (max-width: 760px) {
+  @media (max-width: 760px) {
   .shopHero {
     padding: 76px 18px 48px;
   }
 
   .shopHero h1 {
-    font-size: px;
+    font-size: 56px;
+  }
   }
 
   .shopToolbar {
@@ -947,7 +951,7 @@ button {
   }
 
   .mobileMenuBottom a {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
